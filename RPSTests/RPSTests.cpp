@@ -18,10 +18,17 @@ namespace RPSTests
             const char* result = rps_winner("Rock", "Rock");
             Assert::AreEqual("Draw", result);
         }
+
         TEST_METHOD(Player1Wins_WhenRockBeatsScissors)
         {
             const char* result = rps_winner("Rock", "Scissors");
             Assert::AreEqual("Player1", result);
+        }
+
+        TEST_METHOD(Player2Wins_WhenScissorsBeatsPaper)
+        {
+            const char* result = rps_winner("Paper", "Scissors");
+            Assert::AreEqual("Player2", result);
         }
 
     };
