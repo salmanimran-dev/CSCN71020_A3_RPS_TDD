@@ -15,5 +15,10 @@ const char* rps_winner(const char* p1, const char* p2)
     if (strcmp(p1, "Paper") == 0 && strcmp(p2, "Scissors") == 0)
         return "Player2";
 
+    // Handles Paper beats Rock (Player1 wins)
+    if (strcmp(p1, "Paper") == 0 && strcmp(p2, "Rock") == 0)
+        return "Player1";
+
+
     return "Invalid"; // temporary result for now
 }
