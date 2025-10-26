@@ -1,5 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
+// minor change for initial RED commit
+
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 extern "C" {
