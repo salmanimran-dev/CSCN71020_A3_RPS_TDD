@@ -43,6 +43,13 @@ namespace RPSTests
             Assert::AreEqual("Player2", result);
         }
 
+        TEST_METHOD(Player2Wins_WhenPaperBeatsRock)
+        {
+            const char* result = rps_winner("Rock", "Paper");
+            Assert::AreEqual("Player2", result);
+        }
+
+
 
 
     };
